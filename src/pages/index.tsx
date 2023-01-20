@@ -148,7 +148,7 @@ export default function Chat(props: any) {
           justifyContent={"flex-end"}
           h={"calc(100vh - 64px - 64px - 20px)"}
         >
-          <Box ref={chatScroll} p="2" h={"full"} overflowY={"auto"}>
+          <Box ref={chatScroll} p="2" maxH={"full"} overflowY={"auto"}>
             {messages.map((message, i) => (
               <MessageBox
                 name={message.user.slice(0, 5)}
